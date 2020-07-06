@@ -1,0 +1,131 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+
+\documentclass{cjc}
+
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{siunitx}
+
+\classsetup{
+  % 配置里面不要出现空行
+  title        = {},
+  %title*       = {Title},
+  authors      = {
+    author1 = {
+      name         = {},
+      affiliations = {},
+      biography    = {},
+      % 英文作者介绍内容包括：出生年, 学位(或目前学历), 职称, 主要研究领域(与中文作者介绍中的研究方向一致).
+      biography*   = {},
+      email        = {},
+      phone-number = {},  % 第1作者手机号码(投稿时必须提供，以便紧急联系，发表时会删除)
+    },
+    author2 = {
+      name         = {},
+    },
+    author3 = {
+      name         = {},
+      % 通讯作者
+      corresponding = true,
+    },
+  },
+  % 论文定稿后，作者署名、单位无特殊情况不能变更。若变更，须提交签章申请，
+  % 国家名为中国可以不写，省会城市不写省的名称，其他国家必须写国家名。
+  abstract     = {
+  },
+  abstract*    = {},
+  % 中文关键字与英文关键字对应且一致，应有5-7个关键词，不要用英文缩写
+  keywords     = {},
+  keywords*    = {},
+  grants       = {
+  },
+  % clc           = {TP393},
+  % doi           = {10.11897/SP.J.1016.2020.00001},  % 投稿时不提供DOI号
+  % received-date = {2019-08-10},  % 收稿日期
+  % revised-date  = {2019-10-19},  % 最终修改稿收到日期，投稿时不填写此项
+  % publish-date  = {2020-03-16},  % 出版日期
+  % page          = 512,
+}
+
+\newcommand\dif{\mathop{}\!\mathrm{d}}
+
+% hyperref 总是在导言区的最后加载
+\usepackage{hyperref}
+
+
+
+\begin{document}
+
+\maketitle
+\section{引言}
+
+\section{研究背景}
+\section{研究现状}
+\subsection{国内外研究现状}
+\begin{table}[htbp]
+  \centering
+  \caption{A}
+  \label{tab:exampletable}
+  \begin{tabular}{clll}
+    \toprule
+    \\
+    \midrule
+  \end{tabular}
+
+\end{table}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{figures/5.png}
+\caption{}
+\label{fig:logo}
+\end{figure}
+\begin{table}[htbp]
+  \centering
+  \caption{}
+  \label{tab:exampletable}
+  \begin{tabular}{clll}
+    \toprule
+    频数 & 中心度 & 最早出现日期 & 关键词 \\
+    \midrule
+	107  & 0.35  & 2000  &  polarization\\
+	73	 & 0.26	 & 1995	 &  group polarization\\
+	57	 & 0.23	 & 2002	 &  attitude\\
+	25	 & 0.12	 & 2000	 &  behavior\\
+	22	 & 0.05	 & 2008	 &  social identity\\
+	21	 & 0.14	 & 2000	 &  conflict\\
+	21	 & 0.07	 & 2010	 &  model\\
+	19	 & 0.04	 & 2013	 &  prejudice\\
+	16	 & 0.04	 & 2000	 &  conformity\\
+	15	 & 0.04	 & 2000	 &  perception\\
+	14	 & 0.04	 & 2014	 &  ideology\\
+	14	 & 0.05	 & 2001	 &  identity\\
+	14	 & 0.05	 & 2000	 &  attitude polarization\\
+	12	 & 0.03	 & 2001	 &  group decision making\\
+	12	 & 0.03	 & 2001	 &  inequality\\
+	12	 & 0.07	 & 2000	 &  communication\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{}
+\caption{利}
+\label{fig:logo}
+\end{figure}
+
+\section{研究方法}
+\nocite{*}
+
+\bibliographystyle{cjc}
+\bibliography{example}
+
+
+
+
+
+
+
+\end{document}
